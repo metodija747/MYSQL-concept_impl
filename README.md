@@ -1,7 +1,7 @@
 # MYSQL-concept_impl
 
 MYSQL database container is running on Docker host. Program connects to database via
-mysql.connector.connect, with corresponding parameters initialized on another file because of security. 
+mysql.connector.connect, with corresponding parameters initialized in another file because of security. 
 This program contains the following tables:
 Grade | Student | Class | Bookshelf | Personal | Link | Address.
 1. Grade table acts as a look up table, consisting of 5 different values: FAILED(1), VERY BAD(2), BAD(3), GOOD(4), EXCELLENT(5), assigned on each student. Benefit of using look up table, compared to adding a column on Student table is if we want to change for ex. FAILED into FAILURE we only change it to Grade table, instead of changing N number of times in Student table, where N is the number of students that have FAILED. 
